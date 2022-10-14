@@ -25,7 +25,7 @@ public class ButtonCollision : MonoBehaviour
     {
         Renderer buttonRend = GetComponent<Renderer>();
         Renderer cableRend = cable.GetComponent<Renderer>();
-        if(other.transform.gameObject.tag == "Cube" && other.transform.gameObject.tag != "")
+        if(other.transform.gameObject.tag == "Cube")
         {
             buttonRend.material = green;
             cableRend.material = green;
