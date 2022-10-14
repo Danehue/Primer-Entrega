@@ -25,19 +25,19 @@ public class ButtonCollision : MonoBehaviour
     {
         Renderer buttonRend = GetComponent<Renderer>();
         Renderer cableRend = cable.GetComponent<Renderer>();
-        if(other.transform.gameObject.tag == "Cube")
+        if(other.transform.gameObject.tag != null)
         {
             buttonRend.material = green;
             cableRend.material = green;
             door.transform.position = -doorInitialPosition;
         }       
     }
-    
+
     void OnTriggerExit(Collider other)
     {
         Renderer buttonRend = GetComponent<Renderer>();
         Renderer cableRend = cable.GetComponent<Renderer>();
-        if(other.transform.gameObject.tag == "Cube")
+        if(other.transform.gameObject.tag == "Cube" || other.transform.gameObject.tag == "Player")
         {
             buttonRend.material = red;
             cableRend.material = red;
