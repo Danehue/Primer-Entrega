@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     private Vector3 camForward;
     private Vector3 camRight;
 
-    public GameObject cube;
+    private GameObject newCube;
     
     // Start is called before the first frame update
     void Start()
@@ -77,9 +77,9 @@ public class Player : MonoBehaviour
 
         camDirection();
 
-        movePlayer = playerInput.x * camRight + playerInput.z * camForward;
+        movePlayer = (playerInput.x * camRight + playerInput.z * camForward) * playerSpeed;
 
-        movePlayer = movePlayer * playerSpeed;
+        // movePlayer = movePlayer * playerSpeed;
 
         player.transform.LookAt(player.transform.position + movePlayer);
 
@@ -120,12 +120,15 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.E))
         {
             cantJump = true;
-            Debug.Log("D");
-            cube.transform.gameObject.GetComponent<ObjetcsMecanics>().grabObject();
+            newCube = GameObject.FindWithTag("Cube");
+            newCube.transform.GetComponent<ObjetcsMecanics>().grabObject();
+            anim.SetBool("isGrabing",true);
+
         }
         else
         {
             cantJump = false;
+            anim.SetBool("isGrabing",false);
         }
     }
 }

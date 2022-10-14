@@ -10,8 +10,6 @@ public class ObjetcsMecanics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // setPoint = new Vector3(2,2,2);
-        Debug.Log(setPoint.position);
     }
 
     // Update is called once per frame
