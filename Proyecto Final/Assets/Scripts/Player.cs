@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public Camera mainCamera;
     private Vector3 camForward;
     private Vector3 camRight;
+
+    public GameObject cube;
     
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMove();
+        grabObject();
     }
 
     void camDirection()
@@ -111,5 +114,12 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    void grabObject()
+    {
+        if(Input.GetKey(KeyCode.E))
+        {
+            Debug.Log("D");
+            cube.transform.gameObject.GetComponent<ObjetcsMecanics>().grabObject();
+        }
+    }
 }
