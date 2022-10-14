@@ -23,7 +23,7 @@ public class ObjetcsMecanics : MonoBehaviour
     public void grabObject()
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
-        if(dist < 5)
+        if(dist < 6.5f)
         {
             transform.position = setPoint.position;
         }

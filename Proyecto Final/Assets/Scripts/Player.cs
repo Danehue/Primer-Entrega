@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public float gravity = 9.8f;
     public float fallVelocity;
     public float jumpForce = 4;
+    private bool cantJump = false;
 
     public Camera mainCamera;
     private Vector3 camForward;
@@ -92,7 +93,7 @@ public class Player : MonoBehaviour
 
     void playerJump()
     {
-        if(player.isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if(player.isGrounded && Input.GetKeyDown(KeyCode.Space) && !cantJump)
         {
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;
@@ -118,8 +119,13 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.E))
         {
+            cantJump = true;
             Debug.Log("D");
             cube.transform.gameObject.GetComponent<ObjetcsMecanics>().grabObject();
+        }
+        else
+        {
+            cantJump = false;
         }
     }
 }
