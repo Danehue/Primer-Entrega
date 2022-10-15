@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMove();
-        grabObject();
+        // grabObject();
     }
 
     void camDirection()
@@ -115,20 +115,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    void grabObject()
+    public void grabObject()
     {
-        if(Input.GetKey(KeyCode.E))
-        {
-            cantJump = true;
-            newCube = GameObject.FindWithTag("Cube");
-            newCube.transform.GetComponent<ObjetcsMecanics>().grabObject();
-            anim.SetBool("isGrabing",true);
+        cantJump = true;
+        anim.SetBool("isGrabing",true);
+    }
 
-        }
-        else
-        {
-            cantJump = false;
-            anim.SetBool("isGrabing",false);
-        }
+    public void dropObject()
+    {
+        cantJump = false;
+        anim.SetBool("isGrabing",false);
     }
 }

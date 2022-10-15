@@ -15,15 +15,29 @@ public class ObjetcsMecanics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        chackDistance();
     }
 
-    public void grabObject()
+    void chackDistance()
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
         if(dist < 6.5f)
         {
+            // player.transform.GetComponent<Player>().grabObject();
+            grabObject();
+        }
+    }
+
+    void grabObject()
+    {
+        if(Input.GetKey(KeyCode.E))
+        {
             transform.position = setPoint.position;
+            player.transform.GetComponent<Player>().grabObject();
+        }
+        else
+        {
+            player.transform.GetComponent<Player>().dropObject();
         }
     }
 }
