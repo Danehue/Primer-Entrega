@@ -35,20 +35,8 @@ public class ButtonMousePress : MonoBehaviour
 
     void OnMouseDown() 
     {
-        // movePlatform();
         movePlatform = true;
     }
-
-    // void movePlatform()
-    // {
-    //     if(anim.GetBool("buttonPressed") != true)
-    //     {
-    //     }
-    //     else
-    //     {
-    //                 
-    //     }
-    // }
 
     void handleTimer()
     {
