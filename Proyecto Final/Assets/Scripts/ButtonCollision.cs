@@ -10,38 +10,43 @@ public class ButtonCollision : MonoBehaviour
     public GameObject door;
 
     private Vector3 doorInitialPosition;
+    private Vector3 doorActualPosition;
+    private Vector3 doorMaxY;
     // Start is called before the first frame update
     void Start()
     {
         doorInitialPosition = door.transform.position;
+        doorMaxY = new Vector3(0,9,0);
     }
 
     // Update is called once per frame
     void Update()
     {
+        doorActualPosition = door.transform.position;
     }
 
     void OnTriggerStay(Collider other)
     {
         Renderer buttonRend = GetComponent<Renderer>();
         Renderer cableRend = cable.GetComponent<Renderer>();
-        if(other.transform.gameObject.tag != null)
+
+        buttonRend.material = green;
+        cableRend.material = green;
+
+        if(doorActualPosition.y <= doorInitialPosition.y + doorMaxY.y)
         {
-            buttonRend.material = green;
-            cableRend.material = green;
-            door.transform.position = -doorInitialPosition;
-        }       
+            door.transform.position += Vector3.up;
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
         Renderer buttonRend = GetComponent<Renderer>();
         Renderer cableRend = cable.GetComponent<Renderer>();
-        if(other.transform.gameObject.tag == "Cube" || other.transform.gameObject.tag == "Player")
-        {
-            buttonRend.material = red;
-            cableRend.material = red;
-            door.transform.position = doorInitialPosition;
-        }
+     
+        buttonRend.material = red;
+        cableRend.material = red;
+        Debug.Log(doorActualPosition.y);
+        door.transform.position = doorInitialPosition;  
     }
 }
