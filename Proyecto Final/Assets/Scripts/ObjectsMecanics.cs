@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetcsMecanics : MonoBehaviour
+public class ObjectsMecanics : MonoBehaviour
 {
     public Transform setPoint;  
     public GameObject player;  
