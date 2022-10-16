@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 203370634}
+  platform: {fileID: 1047936283}
 --- !u!1 &169136292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,7 +4872,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728942025}
-  m_LocalRotation: {x: -0.0040950784, y: -0.037732128, z: -0.00015462747, w: 0.9992795}
+  m_LocalRotation: {x: -0.0032057797, y: -0.48997897, z: -0.0018019008, w: 0.8717265}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5775,7 +5776,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878475820}
-  m_LocalRotation: {x: 0.0322064, y: -0.03771283, z: 0.001216092, w: 0.9987688}
+  m_LocalRotation: {x: 0.028461758, y: -0.4897211, z: 0.01599775, w: 0.8712677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6420,8 +6421,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.014033978, y: -0.03772871, z: 0.0005299136, w: 0.9991894}
-  m_LocalPosition: {x: -4.6918716, y: 22.090488, z: 188.77025}
+  m_LocalRotation: {x: 0.012609134, y: -0.48993102, z: 0.0070873266, w: 0.8716412}
+  m_LocalPosition: {x: -25.772987, y: 14.523965, z: 216.71686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7056,15 +7057,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3034e8e33c9bf44e8ec45564670017c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.794277
+      value: -79.88
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3034e8e33c9bf44e8ec45564670017c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.333694
+      value: 11.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3034e8e33c9bf44e8ec45564670017c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 214.07878
+      value: 223.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3034e8e33c9bf44e8ec45564670017c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7322,7 +7323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047936283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -14.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7764,7 +7765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116945213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.6918716, y: 22.090488, z: 188.77025}
+  m_LocalPosition: {x: -16.209084, y: 15.256795, z: 210.71701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10707,7 +10708,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706843419}
-  m_LocalRotation: {x: 0.014033981, y: -0.03772871, z: 0.0005299135, w: 0.9991894}
+  m_LocalRotation: {x: 0.0126091335, y: -0.489931, z: 0.0070873247, w: 0.8716412}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12177,7 +12178,6 @@ GameObject:
   - component: {fileID: 2018760380}
   - component: {fileID: 2018760379}
   - component: {fileID: 2018760378}
-  - component: {fileID: 2018760381}
   - component: {fileID: 2018760382}
   m_Layer: 0
   m_Name: Sphere
@@ -12264,22 +12264,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018760376}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2018760381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018760376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c191feec509568458c3660f64d30126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 0}
-  green: {fileID: 0}
-  cable: {fileID: 0}
-  door: {fileID: 0}
 --- !u!114 &2018760382
 MonoBehaviour:
   m_ObjectHideFlags: 0
