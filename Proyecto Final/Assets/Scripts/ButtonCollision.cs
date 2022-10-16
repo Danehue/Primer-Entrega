@@ -46,7 +46,6 @@ public class ButtonCollision : MonoBehaviour
      
         buttonRend.material = red;
         cableRend.material = red;
-        Debug.Log(doorActualPosition.y);
         door.transform.position = doorInitialPosition;  
     }
 }

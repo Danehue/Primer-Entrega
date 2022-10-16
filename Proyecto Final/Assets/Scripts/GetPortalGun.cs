@@ -23,5 +23,6 @@ public class GetPortalGun : MonoBehaviour
     {
         portalGunInPlayer.SetActive(true);
         portalGunInMap.SetActive(false);
+        Debug.Log("Fin!");
     }
 }
