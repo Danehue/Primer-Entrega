@@ -223,10 +223,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: beddfcff
+      scrollPos: {x: 0, y: 412}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fa29fcfffe29fcff2a2afcff4e2afcff8c48fcff9048fcffac48fcff6c4afcffbeddfcff9a60ffffbc60ffffde60ffff0061ffff2861ffff4c61ffff6861ffff8861ffffaa61ffffcc61ffffee61ffff1062ffff3262ffffd6f9ffff28faffff2cfaffff78faffff18fbffffdc5e0000de6000008c620000
+      m_ExpandedIDs: 18fbffff64600000da6100005e630000bc630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -242,7 +242,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 5}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -35.84408, y: 12.764175, z: -36.056454}
+    m_Target: {x: -63.17146, y: 24.226652, z: 30.440844}
     speed: 2
-    m_Value: {x: -35.84408, y: 12.764175, z: -36.056454}
+    m_Value: {x: -63.17146, y: 24.226652, z: 30.440844}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -551,13 +551,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08806181, y: -0.8796697, z: 0.19104257, w: 0.42749855}
+    m_Target: {x: 0.00036699334, y: 0.9921005, z: -0.120223746, w: -0.04658909}
     speed: 2
-    m_Value: {x: 0.08802546, y: -0.8793066, z: 0.19096372, w: 0.4273221}
+    m_Value: {x: 0.00036683053, y: 0.99166036, z: -0.120170414, w: -0.046568424}
   m_Size:
-    m_Target: 3.9258287
+    m_Target: 3.4124095
     speed: 2
-    m_Value: 3.9258287
+    m_Value: 3.4124095
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -601,15 +601,15 @@ MonoBehaviour:
     y: 606
     width: 1531
     height: 341
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 11}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -651,13 +651,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animations
+    - Assets/Textures
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/Animations
+  - Assets/Textures
   m_LastFoldersGridSize: 75
   m_LastProjectPath: C:\Users\German\OneDrive\Escritorio\CUVL\Proyecto_final\Proyecto
     Final
@@ -665,9 +665,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c46e0000
-    m_LastClickedID: 28356
-    m_ExpandedIDs: 00000000586e000000ca9a3b
+    m_SelectedIDs: c06f0000
+    m_LastClickedID: 28608
+    m_ExpandedIDs: 000000004e6f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000586e000000ca9a3b
+    m_ExpandedIDs: 000000004e6f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -720,9 +720,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: beddfcff
-    m_LastClickedInstanceID: -205378
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000a81000096810000b081000090ad0000c6ad00003a5a0000ee5e0000548c00004e8b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
