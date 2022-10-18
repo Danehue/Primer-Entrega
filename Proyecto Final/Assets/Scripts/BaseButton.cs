@@ -28,7 +28,6 @@ public class BaseButton : MonoBehaviour
             uiButton.SetActive(true);
             if(Input.GetKey(KeyCode.E))
             {
-                Debug.Log("E");
                 button.transform.GetComponent<ButtonMousePress>().keyPressed();
             }
         }
