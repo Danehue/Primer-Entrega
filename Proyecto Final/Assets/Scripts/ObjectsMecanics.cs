@@ -21,7 +21,7 @@ public class ObjectsMecanics : MonoBehaviour
     void chackDistance()
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
-        if(dist < 6.5f)
+        if(dist < 8.5f)
         {
             // player.transform.GetComponent<Player>().grabObject();
             grabObject();
@@ -33,11 +33,11 @@ public class ObjectsMecanics : MonoBehaviour
         if(Input.GetKey(KeyCode.E))
         {
             transform.position = setPoint.position;
-            player.transform.GetComponent<Player>().grabObject();
+            player.transform.GetComponent<PlayerMovement>().grabObject();
         }
         else
         {
-            player.transform.GetComponent<Player>().dropObject();
+            player.transform.GetComponent<PlayerMovement>().dropObject();
         }
     }
 }
