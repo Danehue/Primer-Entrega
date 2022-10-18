@@ -22,7 +22,7 @@ public class ButtonMousePress : MonoBehaviour
         light.color = Color.red;
         platformInitialPosition = platform.transform.position;
         platformMaxY = new Vector3(0,15,0);
-        timer = 10;
+        timer = 15;
         movePlatform = false;
     }
 
@@ -33,9 +33,14 @@ public class ButtonMousePress : MonoBehaviour
         handleTimer();
     }
 
-    void OnMouseDown() 
+    // void OnMouseDown() 
+    // {
+    //     movePlatform = true;
+    // }
+    public void keyPressed()
     {
         movePlatform = true;
+        handleTimer();
     }
 
     void handleTimer()
@@ -47,11 +52,12 @@ public class ButtonMousePress : MonoBehaviour
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
-                timer = 10;
+                timer = 15;
                 light.color = Color.red;
                 anim.SetBool("buttonPressed",false);  
                 movePlatform = false; 
             }
         }
     }
+
 }

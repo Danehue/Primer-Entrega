@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     bool isJumping;
     bool cantJump = false;
 
+    public Camera firstPerson;
+    public Camera thirdPerson;
+
 
     public CharacterController controller;
 
@@ -26,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        firstPerson.enabled = true;
+        thirdPerson.enabled = false;
     }
 
     // Update is called once per frame
@@ -80,5 +84,22 @@ public class PlayerMovement : MonoBehaviour
     {
         cantJump = false;
         anim.SetBool("isGrabing",false);
+    }
+
+    void changeCamera()
+    {
+        if(Input.GetKey(KeyCode.P))
+        {
+            if(firstPerson.enabled)
+            {
+                firstPerson.enabled = true;
+                thirdPerson.enabled = false;
+            }
+            else
+            {
+                firstPerson.enabled = false;
+                thirdPerson.enabled = true;
+            }
+        }
     }
 }
