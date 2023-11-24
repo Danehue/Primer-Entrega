@@ -33,10 +33,6 @@ public class ButtonMousePress : MonoBehaviour
         handleTimer();
     }
 
-    // void OnMouseDown() 
-    // {
-    //     movePlatform = true;
-    // }
     public void keyPressed()
     {
         movePlatform = true;

@@ -8,15 +8,17 @@ public class ButtonCollision : MonoBehaviour
     public Material green;
     public GameObject cable;
     public GameObject door;
+    public float doorMaxYVariable = 8.7f;
 
     private Vector3 doorInitialPosition;
+    private Vector3 doorInitialPosition2;
     private Vector3 doorActualPosition;
     private Vector3 doorMaxY;
     // Start is called before the first frame update
     void Start()
     {
         doorInitialPosition = door.transform.position;
-        doorMaxY = new Vector3(0,9,0);
+        doorMaxY = new Vector3(0,doorMaxYVariable,0);
     }
 
     // Update is called once per frame

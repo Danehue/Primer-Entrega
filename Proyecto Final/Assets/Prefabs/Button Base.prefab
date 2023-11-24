@@ -426,7 +426,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -1.92, z: 0}
 --- !u!114 &7207838395890228353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +443,7 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: 005817457b4434041a7c786d7d30fecd, type: 2}
   cable: {fileID: 0}
   door: {fileID: 0}
+  doorMaxYVariable: 8.7
 --- !u!1 &7207838396463797664
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 89a0c1d98070af543be1f491665d1c4d, type: 2}
+  - {fileID: 2100000, guid: 0aafd877e0c74a743a121b4b7bb083cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -730,7 +731,7 @@ SphereCollider:
   m_GameObject: {fileID: 7207838397036888994}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

@@ -8,7 +8,12 @@ public class GetPortalGun : MonoBehaviour
     public GameObject portalGunInPlayer;
     public GameObject portalGunInMap;
     public GameObject player;
-    public GameObject ui;
+
+    public GameObject blue;
+    public GameObject orange;
+    public GameObject none;
+    public GameObject both;
+    public GameObject crosshair;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +31,8 @@ public class GetPortalGun : MonoBehaviour
         portalGunInPlayer.SetActive(true);
         portalGunInMap.SetActive(false);
         player.SetActive(false);
-        ui.SetActive(true);
+        none.SetActive(true);
+        crosshair.SetActive(false);
         Debug.Log("Fin!");
     }
 }

@@ -7,6 +7,11 @@ TagManager:
   - Cube
   - Platform
   - PortalGun
+  - Object
+  - Portal
+  - Orange
+  - Ground
+  - PortalCollider
   layers:
   - Default
   - TransparentFX
@@ -15,9 +20,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - Player
+  - Object
+  - NotAPortalPlace
   - 
   - 
   - 

@@ -8,20 +8,15 @@ public class PlayerMovement : MonoBehaviour
 
     bool isWalking;
     bool isJumping;
-    bool cantJump = false;
-
-    public Camera firstPerson;
-    public Camera thirdPerson;
-
 
     public CharacterController controller;
 
-    public float speed = 12f;
-    public float gravity = -9.81f;
-    public float jump = 3f;
+    public float speed;
+    public float gravity;
+    public float jump;
 
     public Transform groundCheck;
-    public float groundDistance = .4f;
+    public float groundDistance;
     public LayerMask groundMask;
 
     private Vector3 velocity;
@@ -29,8 +24,10 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firstPerson.enabled = true;
-        thirdPerson.enabled = false;
+        speed = 20f;
+        gravity = -25.5f;
+        jump = 6.5f;
+        groundDistance = .4f;
     }
 
     // Update is called once per frame
@@ -76,30 +73,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void grabObject()
     {
-        cantJump = true;
         anim.SetBool("isGrabing",true);
     }
 
     public void dropObject()
     {
-        cantJump = false;
         anim.SetBool("isGrabing",false);
-    }
-
-    void changeCamera()
-    {
-        if(Input.GetKey(KeyCode.P))
-        {
-            if(firstPerson.enabled)
-            {
-                firstPerson.enabled = true;
-                thirdPerson.enabled = false;
-            }
-            else
-            {
-                firstPerson.enabled = false;
-                thirdPerson.enabled = true;
-            }
-        }
     }
 }
