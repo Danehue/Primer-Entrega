@@ -1,5 +1,5 @@
 # Portal
 Primera entrega.
 
-El proyecto es un mini-juego de tres niveles basado en Portal.
+El proyecto es un mini-juego de cuatro niveles basado en Portal.
 
